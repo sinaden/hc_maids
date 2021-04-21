@@ -6,7 +6,8 @@ parser.add_argument("-u", "--use", type=str, help="Name a directory within ./xml
 parser.add_argument("-t", "--template", type=str, default="maids", help="Name a compiled handlebars template named within ./docs/js/hbmaids.js.")
 args = parser.parse_args()
 
-egDir = ""
+#egDir = ""
+egDir = "/target"
 if (args.use): egDir = "/{}".format(args.use)
 
 with open("./code/templates/maids.html") as f:
