@@ -26,7 +26,7 @@ jobs:
         pip install bs4
     - name: run my python code
       run: |
-        python ./code/build_site/xml2html.py -eg target
+        python ./code/build_site/xml2html.py -u target
     - name: Commit files # transfer the new html files back into the repository
       run: |
         git config --local user.name "sinaden"
